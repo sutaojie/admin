@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-aside width="200px">Aside</el-aside>
+        <el-aside width="200px"><user-nav-menu></user-nav-menu></el-aside>
         <el-container>
             <el-header>Header</el-header>
             <el-main>Main</el-main>
@@ -10,8 +10,12 @@
 </template>
 
 <script>
+    import UserNavMenu from '@/components/UserNavMenu'
     export default {
-        name: "UserPane"
+        name: "UserPane",
+        components:{
+            UserNavMenu
+        }
     }
 </script>
 
